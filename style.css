@@ -14,6 +14,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    /* cursor: default; */
 }
 
 #fixed{
@@ -111,16 +112,25 @@ html,body{
 #center{
     scroll-snap-type: y mandatory;
     position: absolute;
-    left: 35%;
-    width: 30%;
+    /* left: 35%; */
+    width: 100%;
     height: 100vh;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    overflow: hidden;
+    overflow-y: scroll ;
+    /* gap: 300px; */
+    scroll-behavior: smooth;
 }
-#center img{
+#center::-webkit-scrollbar {
+    display: none;
+  }
+  
+.imgs img{
     width: 420px;
+    margin-bottom: 150px;
     scroll-snap-align: start;
 }
