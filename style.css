@@ -134,3 +134,16 @@ html,body{
     margin-bottom: 150px;
     scroll-snap-align: start;
 }
+
+
+@media (max-width:975px){
+    #header{
+        display: none;
+    }
+    #left-bottom{
+        display: none;
+    }
+    #right-bottom{
+        display: none;
+    }
+}
